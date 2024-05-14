@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 
 function Input (props) {
-    const { className, htmlFor, type, id, text, value, onChange, disabled, onSubmit, autocomplete } = props;
+    const { className, htmlFor, type, id, text, value, onChange, disabled, autocomplete } = props;
    
     return (
         <div className={className}>
@@ -10,8 +10,7 @@ function Input (props) {
                 id={id} 
                 value={value} 
                 onChange={onChange} 
-                disabled={disabled} 
-                onSubmit={onSubmit} 
+                disabled={disabled}                
                 autoComplete={autocomplete}
             />
         </div>
@@ -24,11 +23,10 @@ Input.propTypes = {
     type: PropTypes.any.isRequired,
     id: PropTypes.any.isRequired,
     text: PropTypes.string.isRequired,
-    value: PropTypes.string.isRequired,   //needs fix  value undefined
-    onChange: PropTypes.func.isRequired,
-    disabled: PropTypes.string.isRequired,  //needs fix
-    onSubmit: PropTypes.string.isRequired,  //needs fix
-    autocomplete: PropTypes.any.isRequired,
+    value: PropTypes.string,
+    onChange: PropTypes.func,
+    disabled: PropTypes.bool,  
+    autocomplete: PropTypes.any,
 }
 
 export default Input
