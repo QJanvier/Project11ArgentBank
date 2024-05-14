@@ -34,7 +34,7 @@ function EditUserName ({ toggleEditing }) {
 }
 
 EditUserName.propTypes = {
-    toggleEditing: PropTypes.string.isRequired
+    toggleEditing: PropTypes.func.isRequired
 }
 
 export default EditUserName

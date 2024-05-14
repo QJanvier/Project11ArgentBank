@@ -9,11 +9,11 @@ function Button (props) {
 }
 
 Button.propTypes = {
-    classname: PropTypes.string.isRequired,
+    classname: PropTypes.string,
     text: PropTypes.string.isRequired,
-    onSubmit: PropTypes.func.isRequired,
-    type: PropTypes.any.isRequired,
-    onClick: PropTypes.func.isRequired,
+    onSubmit: PropTypes.func,
+    type: PropTypes.any,
+    onClick: PropTypes.func,
 };
 
 export default Button
