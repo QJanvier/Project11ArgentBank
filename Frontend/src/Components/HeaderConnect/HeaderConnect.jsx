@@ -13,7 +13,7 @@ function HeaderConnect() {
 
     const disconnect = (e) => {
         e.preventDefault();
-        dispatch(logOut(navigate("/SignIn")));
+        dispatch(logOut(navigate("/")));
         sessionStorage.removeItem("token");
     }
 
@@ -21,11 +21,11 @@ function HeaderConnect() {
         <>
             <div>
                 <NavLink to="/User" className="navigation__item">
-                    <FontAwesomeIcon icon={faRightFromBracket} />{userName}
+                    <FontAwesomeIcon icon={faCircleUser} />{userName}
                 </NavLink>
 
                 <NavLink className="navigation__item" onClick={disconnect}>
-                    <FontAwesomeIcon icon={faCircleUser} />
+                    <FontAwesomeIcon icon={faRightFromBracket} />
                 </NavLink>
             </div>
         </>
