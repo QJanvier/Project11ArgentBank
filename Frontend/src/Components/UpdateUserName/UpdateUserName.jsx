@@ -28,6 +28,7 @@ function EditUserName ({ toggleEditing }) {
                 <Input className='input-wrapper input-wrapper--edit' htmlFor='firstname' text='First Name: ' type="text" id="firstname" disabled value={firstName} />
                 <Input className='input-wrapper input-wrapper--edit' htmlFor='LastName' text='Last Name: ' type="text" id="LastName" disabled value={lastName}/>
             </div>
+                <Button classname='edit__button' text='Save' type="submit" />
                 <Button classname='edit__button' text='Cancel' onClick={toggleEditing} />
         </form>
     );
