@@ -15,6 +15,7 @@ function HeaderConnect() {
         e.preventDefault();
         dispatch(logOut(navigate("/")));
         sessionStorage.removeItem("token");
+        localStorage.removeItem("token");
     }
 
     return (

@@ -1,6 +1,9 @@
 import Button from '../Button/Button';
 import PropTypes from "prop-types";
 
+import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
+
+
 function Accounts (props) {
     const { title, amount, description } = props;
 
@@ -13,7 +16,7 @@ function Accounts (props) {
                     <p className="account-amount-description">{description}</p>
                 </div>
                 <div className="account-content-wrapper cta">
-                    <Button className="transaction-button" text="View transactions" />
+                    <Button className="transaction-button" icon={faChevronRight} /> 
                 </div>
             </section>
         </>
