@@ -32,6 +32,7 @@ function Form() {
         } catch (error) {
             console.log(error)
             sessionStorage.removeItem("token");
+            
         }
     };
 
