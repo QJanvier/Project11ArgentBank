@@ -27,6 +27,7 @@ Accounts.propTypes = {
     title: PropTypes.string.isRequired,
     amount: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
+    
 };
 
 export default Accounts
