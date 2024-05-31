@@ -13,7 +13,7 @@ Button.propTypes = {
     classname: PropTypes.string,
     text: PropTypes.string,
     onSubmit: PropTypes.func,
-    icon: PropTypes.string,
+    icon: PropTypes.object,
     type: PropTypes.any,
     onClick: PropTypes.func,
 };
